@@ -1,0 +1,138 @@
+/* ===============================
+   1) 全体の設定
+=============================== */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e6f0ff, #ffffff); /* 青→白グラデーション */
+}
+
+/* ===============================
+   2) 言語切り替えボタン
+=============================== */
+.lang-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lang-buttons button {
+    background: #ffffff;
+    border: 2px solid #ccc;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.lang-buttons button:hover {
+    background: #f0f0f0;
+}
+
+/* ===============================
+   3) タイトル・見出し
+=============================== */
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* PNFとは の見出しを一行で表示 */
+h2.single-line,
+p.single-line {
+    white-space: nowrap; /* 改行を防ぐ */
+}
+
+/* ===============================
+   4) コンテンツ・レイアウト
+=============================== */
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* ===============================
+   5) ボタン配置（PC時）
+=============================== */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;   /* 横並びで詰まりすぎないようにする */
+    justify-content: center; /* 中央寄せ */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.page-button {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.page-button:hover {
+    background: #0056b3;
+}
+
+/* ===============================
+   6) スマホ対応 (768px以下)
+=============================== */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .content {
+        max-width: 90%;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .lang-buttons button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    /* ボタンのレイアウトをスマホ用に調整 */
+    .button-container {
+        flex-direction: column; /* 縦並び */
+        align-items: center;
+    }
+
+    .page-button {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

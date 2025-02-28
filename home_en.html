@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNF Vietnam - Rehabilitation & Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function switchLanguage(lang) {
+            let url = window.location.href;
+            if (lang === 'jp') {
+                url = url.replace('home_en.html', 'home_jp.html');
+            } else if (lang === 'vn') {
+                url = url.replace('home_en.html', 'home_vn.html');
+            } else if (lang === 'en') {
+                url = url.replace('home_jp.html', 'home_en.html').replace('home_vn.html', 'home_en.html');
+            }
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button onclick="switchLanguage('jp')">JPN</button>
+            <button onclick="switchLanguage('en')">ENG</button>
+            <button onclick="switchLanguage('vn')">VN</button>
+        </div>
+        <h1>PNF Vietnam</h1>
+        <h2>Rehabilitation & Training</h2>
+        <p>
+            High-level rehabilitation and performance training provided by Vietnam’s only internationally certified PNF therapist.
+        </p>
+        <p>
+            — Supporting posture and movement improvement, pain relief, functional recovery, and performance enhancement —
+        </p>
+        <h3>What is PNF (Proprioceptive Neuromuscular Facilitation)?</h3>
+        <p>
+            PNF differs from massage in that it activates neuromuscular function, helping individuals acquire more efficient movement patterns.
+        </p>
+        <div class="button-container">
+            <a href="pnf_history_en.html" class="btn">PNF History</a>
+            <a href="pnf_rehabilitation_en.html" class="btn">Rehabilitation & Training</a>
+            <a href="pnf_services_en.html" class="btn">Services</a>
+            <a href="pnf_treatment_area_en.html" class="btn">Treatment Areas</a>
+            <a href="pnf_profile_en.html" class="btn">Profile</a>
+            <a href="https://docs.google.com/forms/d/1GLBYYKtZKNoRZwCRSlqQfLd9hpqukv-6USiSgbEOAcg/viewform" class="btn">Book an Appointment</a>
+
+        </div>
+    </div>
+</body>
+</html>

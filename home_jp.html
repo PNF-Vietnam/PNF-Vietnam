@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNF Vietnam - リハビリテーション & トレーニング</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function switchLanguage(lang) {
+            let url = window.location.href;
+            if (lang === 'en') {
+                url = url.replace('home_jp.html', 'home_en.html');
+            } else if (lang === 'vn') {
+                url = url.replace('home_jp.html', 'home_vn.html');
+            } else if (lang === 'jp') {
+                url = url.replace('home_en.html', 'home_jp.html').replace('home_vn.html', 'home_jp.html');
+            }
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <button onclick="switchLanguage('jp')">JPN</button>
+            <button onclick="switchLanguage('en')">ENG</button>
+            <button onclick="switchLanguage('vn')">VN</button>
+        </div>
+        <h1>PNF Vietnam</h1>
+        <h2>リハビリ & トレーニング</h2>
+        <p>
+            ベトナムで唯一のPNF国際認定セラピストによる高度なリハビリテーション。
+        </p>
+        <p>
+            — 姿勢と動作の改善により、疼痛軽減、機能回復、パフォーマンス向上をサポート —
+        </p>
+        <h3>PNF（固有受容性神経筋促通法）とは？</h3>
+        <p>
+            PNFは、マッサージとは異なり、神経・筋の働きを活性化し、より効率的な動作を習得することを目的とした技術です。
+        </p>
+        <div class="button-container">
+            <a href="pnf_history_jp.html" class="btn">PNFの歴史</a>
+            <a href="pnf_rehabilitation_jp.html" class="btn">リハビリとトレーニング</a>
+            <a href="pnf_services_jp.html" class="btn">提供サービス</a>
+            <a href="pnf_treatment_area_jp.html" class="btn">施術エリア</a>
+            <a href="pnf_profile_jp.html" class="btn">プロフィール</a>
+            <a href="https://docs.google.com/forms/d/1GLBYYKtZKNoRZwCRSlqQfLd9hpqukv-6USiSgbEOAcg/viewform" class="btn">予約フォーム</a>
+
+        </div>
+    </div>
+</body>
+</html>

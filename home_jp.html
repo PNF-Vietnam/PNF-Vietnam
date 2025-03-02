@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNF Vietnam - リハビリテーション & トレーニング</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ロゴとタイトルを横並びにする */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* センタリング */
+            margin-top: 20px; /* 上の余白を調整 */
+        }
+        .logo {
+            width: 150px; /* ロゴのサイズ調整 */
+            margin-right: 15px; /* ロゴとテキストの間隔 */
+        }
+        .logo img {
+            width: 100%; /* 画像の幅を100%に */
+            height: auto;
+        }
+        .title {
+            text-align: left;
+        }
+    </style>
     <script>
         function switchLanguage(lang) {
             let url = window.location.href;
@@ -20,21 +40,32 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <div class="language-switch">
-            <button onclick="switchLanguage('jp')">JPN</button>
-            <button onclick="switchLanguage('en')">ENG</button>
-            <button onclick="switchLanguage('vn')">VN</button>
+    <div class="language-switch">
+        <button onclick="switchLanguage('jp')">JPN</button>
+        <button onclick="switchLanguage('en')">ENG</button>
+        <button onclick="switchLanguage('vn')">VN</button>
+    </div>
+
+    <!-- タイトルとロゴを横並び -->
+    <div class="header">
+        <div class="logo">
+            <img src="PNF Vietnam.png" alt="PNF Vietnam Logo">
         </div>
-        <h1>PNF Vietnam</h1>
-        <h2>リハビリ & トレーニング</h2>
+        <div class="title">
+            <h1>PNF Vietnam</h1>
+            <h2>リハビリ & トレーニング</h2>
+        </div>
+    </div>
+
+    <div class="container">
         <p>
             ベトナムで唯一のPNF国際認定セラピストによる高度なリハビリテーション。
         </p>
         <p>
             — 姿勢と動作の改善により、疼痛軽減、機能回復、パフォーマンス向上をサポート —
         </p>
-        <h3>PNF（固有受容性神経筋促通法）とは？</h3>
+        <h3>PNF（Proprioceptive Neuromuscular Facilitation）とは？</h3>
+        <p>PNF（固有受容性神経筋促通法）は、神経と筋の協調を向上させる技術です。</p>
         <p>
             PNFは、マッサージとは異なり、神経・筋の働きを活性化し、より効率的な動作を習得することを目的とした技術です。
         </p>
@@ -45,7 +76,6 @@
             <a href="pnf_treatment_area_jp.html" class="btn">施術エリア</a>
             <a href="pnf_profile_jp.html" class="btn">プロフィール</a>
             <a href="https://docs.google.com/forms/d/1GLBYYKtZKNoRZwCRSlqQfLd9hpqukv-6USiSgbEOAcg/viewform" class="btn">予約フォーム</a>
-
         </div>
     </div>
 </body>

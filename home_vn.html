@@ -5,25 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNF Vietnam - Phục hồi chức năng & Huấn luyện</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Căn chỉnh logo và tiêu đề ngang hàng */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Căn giữa */
+            margin-top: 20px; /* Điều chỉnh lề trên */
+        }
+        .logo {
+            width: 150px; /* Kích thước logo */
+            margin-right: 15px; /* Khoảng cách giữa logo và tiêu đề */
+        }
+        .logo img {
+            width: 100%; /* Kích thước hình ảnh */
+            height: auto;
+        }
+        .title {
+            text-align: left;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            let url = window.location.href;
+            if (lang === 'jp') {
+                url = url.replace('home_vn.html', 'home_jp.html');
+            } else if (lang === 'en') {
+                url = url.replace('home_vn.html', 'home_en.html');
+            } else if (lang === 'vn') {
+                url = url.replace('home_jp.html', 'home_vn.html').replace('home_en.html', 'home_vn.html');
+            }
+            window.location.href = url;
+        }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <!-- 言語切り替えボタン -->
-        <div class="language-switch">
-            <button onclick="window.location.href='home_jp.html'">JPN</button>
-            <button onclick="window.location.href='home_en.html'">ENG</button>
-            <button onclick="window.location.href='home_vn.html'">VN</button>
+    <div class="language-switch">
+        <button onclick="switchLanguage('jp')">JPN</button>
+        <button onclick="switchLanguage('en')">ENG</button>
+        <button onclick="switchLanguage('vn')">VN</button>
+    </div>
+
+    <!-- Tiêu đề và logo ngang hàng -->
+    <div class="header">
+        <div class="logo">
+            <img src="PNF Vietnam.png" alt="PNF Vietnam Logo">
         </div>
+        <div class="title">
+            <h1>PNF Vietnam</h1>
+            <h2>Phục hồi chức năng & Huấn luyện</h2>
+        </div>
+    </div>
 
-        <h1>PNF Vietnam</h1>
-        <h2>Phục hồi chức năng & Huấn luyện</h2>
-        <p>Dịch vụ phục hồi chức năng và huấn luyện hiệu suất cao được cung cấp bởi chuyên gia PNF duy nhất tại Việt Nam có chứng nhận quốc tế.</p>
-        <p>— Hỗ trợ cải thiện tư thế và chuyển động, giảm đau, phục hồi chức năng và nâng cao hiệu suất —</p>
-
-        <h3>PNF (Tạo thuận thần kinh cơ thụ cảm bản thể) là gì?</h3>
-        <p>PNF khác với mát-xa ở chỗ nó kích hoạt chức năng thần kinh cơ, giúp cá nhân học cách kiểm soát chuyển động hiệu quả hơn.</p>
-
-        <!-- ナビゲーションボタン -->
+    <div class="container">
+        <p>
+            Dịch vụ phục hồi chức năng và huấn luyện hiệu suất cao được cung cấp bởi chuyên gia PNF duy nhất tại Việt Nam có chứng nhận quốc tế.
+        </p>
+        <p>
+            — Hỗ trợ cải thiện tư thế và chuyển động, giảm đau, phục hồi chức năng và nâng cao hiệu suất —
+        </p>
+        <h3>PNF (Proprioceptive Neuromuscular Facilitation) là gì?</h3>
+        <p>PNF(Tạo thuận thần kinh cơ thụ cảm bản thể) là một kỹ thuật giúp cải thiện sự phối hợp giữa hệ thần kinh và cơ bắp.</p>
+        <p>
+            PNF khác với mát-xa ở chỗ nó kích hoạt chức năng thần kinh cơ, giúp cá nhân học cách kiểm soát chuyển động hiệu quả hơn.
+        </p>
         <div class="button-container">
             <a href="pnf_history_vn.html" class="btn">Lịch sử PNF</a>
             <a href="pnf_rehabilitation_vn.html" class="btn">Phục hồi chức năng & Huấn luyện</a>
@@ -31,7 +76,6 @@
             <a href="pnf_treatment_area_vn.html" class="btn">Khu vực điều trị</a>
             <a href="pnf_profile_vn.html" class="btn">Hồ sơ</a>
             <a href="https://docs.google.com/forms/d/1GLBYYKtZKNoRZwCRSlqQfLd9hpqukv-6USiSgbEOAcg/viewform" class="btn">Đặt lịch</a>
-
         </div>
     </div>
 </body>

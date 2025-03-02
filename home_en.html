@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNF Vietnam - Rehabilitation & Training</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Align logo and title horizontally */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center alignment */
+            margin-top: 20px; /* Adjust top margin */
+        }
+        .logo {
+            width: 150px; /* Adjust logo size */
+            margin-right: 15px; /* Space between logo and text */
+        }
+        .logo img {
+            width: 100%; /* Set image width to 100% */
+            height: auto;
+        }
+        .title {
+            text-align: left;
+        }
+    </style>
     <script>
         function switchLanguage(lang) {
             let url = window.location.href;
@@ -20,14 +40,24 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <div class="language-switch">
-            <button onclick="switchLanguage('jp')">JPN</button>
-            <button onclick="switchLanguage('en')">ENG</button>
-            <button onclick="switchLanguage('vn')">VN</button>
+    <div class="language-switch">
+        <button onclick="switchLanguage('jp')">JPN</button>
+        <button onclick="switchLanguage('en')">ENG</button>
+        <button onclick="switchLanguage('vn')">VN</button>
+    </div>
+
+    <!-- Align title and logo -->
+    <div class="header">
+        <div class="logo">
+            <img src="PNF Vietnam.png" alt="PNF Vietnam Logo">
         </div>
-        <h1>PNF Vietnam</h1>
-        <h2>Rehabilitation & Training</h2>
+        <div class="title">
+            <h1>PNF Vietnam</h1>
+            <h2>Rehabilitation & Training</h2>
+        </div>
+    </div>
+
+    <div class="container">
         <p>
             High-level rehabilitation and performance training provided by Vietnam’s only internationally certified PNF therapist.
         </p>
@@ -35,8 +65,9 @@
             — Supporting posture and movement improvement, pain relief, functional recovery, and performance enhancement —
         </p>
         <h3>What is PNF (Proprioceptive Neuromuscular Facilitation)?</h3>
+        <p>PNF is a technique that enhances coordination between the nervous system and muscles.</p>
         <p>
-            PNF differs from massage in that it activates neuromuscular function, helping individuals acquire more efficient movement patterns.
+            Unlike massage, PNF activates neuromuscular function to help individuals acquire more efficient movement patterns.
         </p>
         <div class="button-container">
             <a href="pnf_history_en.html" class="btn">PNF History</a>
@@ -45,7 +76,6 @@
             <a href="pnf_treatment_area_en.html" class="btn">Treatment Areas</a>
             <a href="pnf_profile_en.html" class="btn">Profile</a>
             <a href="https://docs.google.com/forms/d/1GLBYYKtZKNoRZwCRSlqQfLd9hpqukv-6USiSgbEOAcg/viewform" class="btn">Book an Appointment</a>
-
         </div>
     </div>
 </body>
